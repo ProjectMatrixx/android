@@ -64,7 +64,7 @@
   <project path="packages/apps/CellBroadcastReceiver" name="crdroidandroid/android_packages_apps_CellBroadcastReceiver" groups="pdk-cw-fs,pdk-fs" remote="crdroid" />
   <project path="packages/apps/Contacts" name="crdroidandroid/android_packages_apps_Contacts" groups="pdk-fs" remote="crdroid" />
   <project path="packages/apps/DeskClock" name="crdroidandroid/android_packages_apps_DeskClock" remote="crdroid" />
-  <project path="packages/apps/Dialer" name="crdroidandroid/android_packages_apps_Dialer" groups="pdk-fs" remote="crdroid" />
+  <!--project path="packages/apps/Dialer" name="crdroidandroid/android_packages_apps_Dialer" groups="pdk-fs" remote="crdroid" />-->
   <project path="packages/apps/ExactCalculator" name="crdroidandroid/android_packages_apps_ExactCalculator" remote="crdroid" />
   <project path="packages/apps/FaceUnlockService" name="crdroidandroid/android_packages_apps_FaceUnlockService" remote="crdroid" />
   <project path="packages/apps/Matlog" name="crdroidandroid/android_packages_apps_Matlog" remote="crdroid" />
