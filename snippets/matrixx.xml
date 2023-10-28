@@ -8,7 +8,7 @@
            revision="refs/heads/13.0" />
 
   <remote  name="matrixx-gitlab"
-           fetch="https://gitlab.com/ProjectMatrixx"
+           fetch="https://gitlab.com/projectmatrixx"
            sync-c="true"
            sync-j="4"
            revision="refs/heads/13.0" />
