@@ -43,6 +43,8 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
 
+  <project path="device/lineage/sepolicy" name="android_device_lineage_sepolicy" remote="matrixx" />
+
   <project path="frameworks/av" name="android_frameworks_av" groups="pdk" remote="matrixx" />
   <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="matrixx" />
 
