@@ -1207,4 +1207,5 @@
   <include name="snippets/lineage.xml" />
   <include name="snippets/crdroid.xml" />
   <include name="snippets/matrixx.xml" />
+  <include name="snippets/pixel.xml" />
 </manifest>
