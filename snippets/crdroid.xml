@@ -73,6 +73,4 @@
   <project path="system/vold" name="crdroidandroid/android_system_vold" groups="pdk" remote="crdroid" />
 
   <project path="toolchain/pgo-profiles" name="crdroidandroid/android_toolchain_pgo-profiles" groups="pdk" remote="crdroid" />
-
-  <project path="vendor/pixel-framework" name="crdroidandroid/android_vendor_pixel-framework" remote="crdroid" />
 </manifest>
