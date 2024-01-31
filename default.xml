@@ -182,7 +182,7 @@
   <project path="external/geonames" name="platform/external/geonames" groups="pdk" remote="aosp" />
   <project path="external/gflags" name="platform/external/gflags" groups="pdk" remote="aosp" />
   <project path="external/gfxstream-protocols" name="platform/external/gfxstream-protocols" groups="pdk" remote="aosp" />
-  <project path="external/giflib" name="platform/external/giflib" groups="pdk,qcom_msm8x26" remote="aosp" />
+  <!--<project path="external/giflib" name="platform/external/giflib" groups="pdk,qcom_msm8x26" remote="aosp" />-->
   <project path="external/glide" name="platform/external/glide" groups="pdk" remote="aosp" />
   <project path="external/go-cmp" name="platform/external/go-cmp" groups="pdk" remote="aosp" />
   <project path="external/golang-protobuf" name="platform/external/golang-protobuf" groups="pdk" remote="aosp" />
@@ -242,7 +242,7 @@
   <project path="external/jazzer-api" name="platform/external/jazzer-api" groups="pdk" remote="aosp" />
   <project path="external/jcommander" name="platform/external/jcommander" groups="pdk" remote="aosp" />
   <project path="external/jdiff" name="platform/external/jdiff" groups="pdk" remote="aosp" />
-  <project path="external/jemalloc_new" name="platform/external/jemalloc_new" groups="pdk" remote="aosp" />
+  <!--<project path="external/jemalloc_new" name="platform/external/jemalloc_new" groups="pdk" remote="aosp" />-->
   <project path="external/jimfs" name="platform/external/jimfs" groups="pdk" remote="aosp" />
   <project path="external/jline" name="platform/external/jline" groups="pdk,tradefed,pdk-fs" remote="aosp" />
   <project path="external/jsilver" name="platform/external/jsilver" groups="pdk" remote="aosp" />
@@ -786,7 +786,7 @@
   <project path="external/xz-embedded" name="platform/external/xz-embedded" groups="pdk" remote="aosp" />
   <project path="external/xz-java" name="platform/external/xz-java" groups="pdk" remote="aosp" />
   <project path="external/yapf" name="platform/external/yapf" groups="vts,projectarch,pdk" remote="aosp" />
-  <!--<project path="external/zlib" name="platform/external/zlib" groups="pdk" remote="aosp" />-->
+  <project path="external/zlib" name="platform/external/zlib" groups="pdk" remote="aosp" />
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk" remote="aosp" />
   <project path="external/zstd" name="LineageOS/android_external_zstd" />
   <project path="external/zucchini" name="platform/external/zucchini" groups="pdk" remote="aosp" />
@@ -963,7 +963,7 @@
   <project path="packages/apps/SystemUIGo" name="platform/packages/apps/SystemUIGo" groups="pdk-fs" remote="aosp" />
   <project path="packages/apps/Tag" name="LineageOS/android_packages_apps_Tag" groups="pdk-fs" />
   <project path="packages/apps/Test/connectivity" name="platform/packages/apps/Test/connectivity" groups="pdk" remote="aosp" />
-  <project path="packages/apps/ThemePicker" name="LineageOS/android_packages_apps_ThemePicker" groups="pdk-fs" />
+  <!--<project path="packages/apps/ThemePicker" name="LineageOS/android_packages_apps_ThemePicker" groups="pdk-fs" />-->
   <project path="packages/apps/Traceur" name="platform/packages/apps/Traceur" groups="pdk-fs" remote="aosp" />
   <!--<project path="packages/apps/Trebuchet" name="LineageOS/android_packages_apps_Trebuchet" groups="pdk-fs" />-->
   <project path="packages/apps/TvSettings" name="LineageOS/android_packages_apps_TvSettings" groups="pdk-fs" />
@@ -1006,7 +1006,7 @@
   <project path="packages/modules/Scheduling" name="platform/packages/modules/Scheduling" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="packages/modules/SEPolicy" name="platform/packages/modules/SEPolicy" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="packages/modules/SdkExtensions" name="platform/packages/modules/SdkExtensions" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
-  <project path="packages/modules/StatsD" name="platform/packages/modules/StatsD" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
+  <!--<project path="packages/modules/StatsD" name="platform/packages/modules/StatsD" groups="pdk-cw-fs,pdk-fs" remote="aosp" />-->
   <project path="packages/modules/Telephony" name="platform/packages/modules/Telephony" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="packages/modules/TestModule" name="platform/packages/modules/TestModule" remote="aosp" />
   <project path="packages/modules/ThreadNetwork" name="platform/packages/modules/ThreadNetwork" remote="aosp" />
@@ -1029,7 +1029,7 @@
   <project path="packages/screensavers/PhotoTable" name="LineageOS/android_packages_screensavers_PhotoTable" groups="pdk-fs" />
   <project path="packages/services/AlternativeNetworkAccess" name="platform/packages/services/AlternativeNetworkAccess" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="packages/services/BuiltInPrintService" name="platform/packages/services/BuiltInPrintService" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
-  <project path="packages/services/Car" name="platform/packages/services/Car" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
+  <project path="packages/services/Car" name="LineageOS/android_packages_services_Car" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/services/DeviceAsWebcam" name="platform/packages/services/DeviceAsWebcam" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="packages/services/Iwlan" name="platform/packages/services/Iwlan" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="packages/services/Mms" name="LineageOS/android_packages_services_Mms" groups="pdk-cw-fs,pdk-fs" />
