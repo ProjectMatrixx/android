@@ -47,6 +47,7 @@
 
   <project path="frameworks/av" name="android_frameworks_av" groups="pdk" remote="matrixx" />
   <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="matrixx" />
+  <project path="frameworks/native" name="android_frameworks_native" groups="pdk" remote="matrixx" />
 
   <project path="lineage-sdk" name="android_lineage-sdk" remote="matrixx"  />
 
@@ -65,6 +66,7 @@
   <project path="vendor/addons" name="android_vendor_addons" remote="matrixx"  />
   <project path="vendor/lineage" name="android_vendor_lineage" remote="matrixx"  />
   <project path="vendor/MatrixxOTA" name="android_vendor_MatrixxOTA" remote="matrixx-devices"  />
+  <project path="vendor/pixel-framework" name="android_vendor_pixel-framework" remote="matrixx" />
 
   <project path="vendor/certification" name="android_vendor_certification" remote="matrixx-gitlab" />
   <project path="vendor/gapps" name="android_vendor_gapps" remote="bitbucket" />
