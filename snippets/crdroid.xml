@@ -43,7 +43,6 @@
   <project path="hardware/qcom-caf/sm8550/audio/agm" name="crdroidandroid/android_vendor_qcom_opensource_agm" groups="qcom,kailua-audio" revision="14.0-caf-sm8550" />
 
   <project path="packages/apps/DeskClock" name="crdroidandroid/android_packages_apps_DeskClock" groups="pdk-fs" remote="crdroid" />
-  <project path="packages/apps/ExactCalculator" name="crdroidandroid/android_packages_apps_ExactCalculator" remote="crdroid" />
   <project path="packages/apps/FaceUnlock" name="crdroidandroid/android_packages_apps_FaceUnlock" remote="crdroid-gitlab" />
   <project path="packages/apps/GameSpace" name="crdroidandroid/android_packages_apps_GameSpace" remote="crdroid" />
   <project path="packages/apps/Nfc" name="crdroidandroid/android_packages_apps_Nfc" groups="apps_nfc,pdk-fs" remote="crdroid" />
@@ -53,7 +52,6 @@
   <project path="packages/modules/adb" name="crdroidandroid/android_packages_modules_adb" groups="pdk" remote="crdroid" />
   <project path="packages/modules/Bluetooth" name="crdroidandroid/android_packages_modules_Bluetooth" groups="pdk" remote="crdroid" />
   <project path="packages/modules/Connectivity" name="crdroidandroid/android_packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" remote="crdroid" />
-  <project path="packages/modules/common" name="crdroidandroid/android_packages_modules_common" groups="pdk-cw-fs,pdk-fs" remote="crdroid" />
   <project path="packages/modules/Permission" name="crdroidandroid/android_packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" remote="crdroid" />
   <project path="packages/modules/StatsD" name="crdroidandroid/android_packages_modules_StatsD" groups="pdk-cw-fs,pdk-fs" remote="crdroid" />
   <project path="packages/modules/Virtualization" name="crdroidandroid/android_packages_modules_Virtualization" groups="pdk" remote="crdroid" />
