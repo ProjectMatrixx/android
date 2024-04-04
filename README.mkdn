@@ -20,6 +20,5 @@ repo sync -c --no-clone-bundle --optimized-fetch --prune --force-sync -j$(nproc 
 ### Now run
 ```
 . build/envsetup.sh
-lunch lineage_devicecodename-buildtype
-m bacon
+brunch devicecodename
 ```
