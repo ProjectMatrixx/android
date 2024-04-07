@@ -46,6 +46,7 @@
   <project path="device/lineage/sepolicy" name="android_device_lineage_sepolicy" remote="matrixx" />
 
   <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="matrixx" />
+  <project path="frameworks/native" name="android_frameworks_native" groups="pdk" remote="matrixx" />
 
   <project path="lineage-sdk" name="android_lineage-sdk" remote="matrixx"  />
 
@@ -71,5 +72,6 @@
   <project path="vendor/MatrixxOTA" name="android_vendor_MatrixxOTA" remote="matrixx-devices"  />
 
   <project path="vendor/certification" name="android_vendor_certification" remote="matrixx-gitlab" />
+  <project path="vendor/microsoft" name="android_vendor_microsoft" remote="matrixx-gitlab" />
   <project path="vendor/gapps" name="android_vendor_gapps" remote="bitbucket" />
 </manifest>
