@@ -47,6 +47,7 @@
 
   <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="matrixx" />
   <project path="frameworks/native" name="android_frameworks_native" groups="pdk" remote="matrixx" />
+  <project path="frameworks/av" name="android_frameworks_av" groups="pdk" remote="matrixx" />
 
   <project path="lineage-sdk" name="android_lineage-sdk" remote="matrixx"  />
 
