@@ -71,6 +71,7 @@
   <project path="vendor/addons" name="android_vendor_addons" remote="matrixx"  />
   <project path="vendor/lineage" name="android_vendor_lineage" remote="matrixx"  />
   <project path="vendor/MatrixxOTA" name="android_vendor_MatrixxOTA" remote="matrixx-devices"  />
+  <project path="vendor/pixel-framework" name="android_vendor_pixel-framework" remote="matrixx" />
 
   <project path="vendor/certification" name="android_vendor_certification" remote="matrixx-gitlab" />
   <project path="vendor/microsoft" name="android_vendor_microsoft" remote="matrixx-gitlab" />
