@@ -66,7 +66,6 @@
   <project path="packages/services/OmniJaws" name="android_packages_services_OmniJaws" remote="matrixx" />
 
   <project path="system/core" name="android_system_core" groups="pdk" remote="matrixx" />
-  <project path="system/memory/lmkd" name="android_system_memory_lmkd" groups="pdk" remote="matrixx" />
 
   <project path="vendor/addons" name="android_vendor_addons" remote="matrixx"  />
   <project path="vendor/lineage" name="android_vendor_lineage" remote="matrixx"  />
