@@ -74,7 +74,6 @@
   <project path="vendor/gms" name="vendor-gms-matrixx" remote="gitlab" />
   <project path="vendor/pixel-framework" name="android_vendor_pixel-framework" remote="matrixx" />
   <project path="vendor/pixeloverlays" name="android_vendor_pixeloverlays" remote="matrixx" />
-  <project path="vendor/support" name="vendor_support" remote="matrixx" />
   <project path="vendor/google/overlays/ThemeIcons" name="vendor_google_overlays_ThemeIcons" remote="matrixx" />
   
 </manifest>
