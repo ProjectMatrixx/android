@@ -23,7 +23,7 @@
 
   <project path="android" name="android" remote="matrixx" />
   <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="matrixx" />
-  <project path="external/boringssl" name="external_boringssl" remote="matrixx" />
+  <project path="external/bouncycastle" name="external_bouncycastle" remote="matrixx" />
   
   <!-- build repos -->
   <project path="build/make" name="android_build" groups="pdk,sysui-studio" remote="matrixx" >
@@ -62,7 +62,6 @@
   <!-- system repos -->
   <project path="system/core" name="android_system_core" groups="pdk" remote="matrixx" />
   <project path="system/libhwbinder" name="system_libhwbinder" remote="matrixx" />
-  <project path="system/security" name="android_system_security" remote="matrixx" />
 
   <!--vendor repos-->
   <project path="vendor/addons" name="android_vendor_addons" remote="matrixx"  />
