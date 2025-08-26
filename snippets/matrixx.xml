@@ -48,6 +48,9 @@
 
   <project path="lineage-sdk" name="android_lineage-sdk" remote="matrixx"  />
 
+  <!-- hardware repos -->
+  <project path="hardware/lineage/interfaces" name="android_hardware_lineage_interfaces" remote="matrixx" />
+
   <!-- packages repos -->
   <project path="packages/apps/Backgrounds" name="android_packages_apps_Backgrounds" remote="matrixx" />
   <project path="packages/apps/crDroidSettings" name="android_packages_apps_MatrixxSettings" remote="matrixx"  />
