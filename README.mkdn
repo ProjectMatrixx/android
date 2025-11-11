@@ -1,116 +1,54 @@
-![alt text][logo]
+<a href="#"><img src="Banner.png" /></a>
 
-[logo]:https://crdroid.net/img/logo.png "crDroid Android"
+#
 
-## 1. Grabbing the source
-
-Repo is a tool provided by Google that simplifies using Git in the context of the Android source:
-- Repo docs: http://source.android.com/source/developing.html
-- Git docs: http://git-scm.com/book
-
-### 1.1 Installing dependencies and Repo
-
-Several packages are needed in order to build crDroid. Example (we are using Ubuntu):
-```bash
-sudo apt install bc bison build-essential ccache curl flex g++-multilib gcc-multilib git git-lfs gnupg gperf imagemagick lib32ncurses-dev lib32readline-dev lib32z1-dev liblz4-tool libncurses6 libncurses-dev libsdl1.2-dev libssl-dev libwxgtk3.2-dev libxml2 libxml2-utils lzop pngcrush rsync schedtool squashfs-tools xsltproc zip zlib1g-dev
+### Create a directory for the source files & Go into created directory
 ```
-(Some of those packages may need adjustment for your linux distribution)
-
-Install the Repo tool:
-```bash
-# create ~/bin and add to PATH for this session (or add to your shell profile)
-mkdir -p ~/bin
-export PATH=~/bin:$PATH
-
-# download Repo
-curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
-
-# make Repo executable
-chmod a+x ~/bin/repo
+mkdir matrixx
+cd matrixx
+```
+### Initializing Repo
+```
+repo init -u https://github.com/ProjectMatrixx/android.git -b 16.0 --git-lfs
 ```
 
-Tip: Add `export PATH=~/bin:$PATH` to `~/.bashrc` or your shell profile so Repo is available in future sessions.
-
-### 1.2 Initializing Repo
-
-Create a workspace and initialize the crDroid 16.0 manifest:
-```bash
-mkdir -p ~/crDroid
-cd ~/crDroid
-repo init -u https://github.com/crdroidandroid/android.git -b 16.0 --git-lfs --no-clone-bundle
+### Now sync sources
+```
+repo sync -c --no-clone-bundle --optimized-fetch --prune --force-sync -j$(nproc --all)
 ```
 
-Sync the source tree (may take a long time on first run):
-```bash
-repo sync
+### Now run
 ```
-
-Notes and useful flags:
-- To recover from interrupted syncs or to force a fresh copy:  
-  `repo sync --force-sync --no-tags --no-clone-bundle -j8` (adjust `-j` to match your bandwidth/CPUs).
-- Use `repo sync -c` to only sync the current branch per project (saves time/space) when appropriate.
-
----
-
-## 2. Building
-
-Prepare the build environment:
-```bash
 . build/envsetup.sh
+brunch devicecodename
 ```
 
-Build using:
+### Build Flags ###
+
 ```bash
-brunch <devicecodename>
+# To include Gapps 
+WITH_GMS := true
+
+# To include QuickSwitch
+WITH_QS := true
+
+# To Build BCR
+TARGET_SUPPORTS_GSUITE := true
 ```
-(Replace `<devicecodename>` with your device codename, e.g. `caiman`, `lemonadep`, etc.)
 
-Troubleshooting tips:
-- Out-of-disk-space: ensure enough free space (Android tree can require 100+ GB).
-- If builds fail after repo sync, try `repo sync --force-sync` and a clean build: `mka clean` then rebuild.
-
----
-
-## 3. Contributions
-
-To submit changes or patches:
-- Fork the repository on GitHub, make your changes, and open a Pull Request against the appropriate branch.
-- We review PRs and merge them when appropriate.
-
----
-
-## 4. How to become an Official Maintainer
-
-1. Read and follow our rules and guidelines:
-   https://github.com/crdroidandroid/rules-and-guidelines
-2. If everything is in order, message Gabriel on Telegram:
-   https://telegram.me/gwolf2u
-
----
-
-## 5. crDroid features / overlays, translations and forum template
-
-### 5.1 crDroid overlays
-Set overlays to the proper paths.
-
-Frameworks base:
-```text
-overlay/frameworks/base/core/res/res/values/config.xml
+### To Add Maintainers name 
 ```
-Example reference:
-https://github.com/crdroidandroid/android_frameworks_base/blob/16.0/core/res/res/values/cr_config.xml
+# Add in your overlay (overlay/packages/apps/Settings/res/values/strings.xml)
 
-SystemUI:
-```text
-overlay/frameworks/base/packages/SystemUI/res/values/config.xml
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2025 Project Matrixx
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Android version screen, build maintainer -->
+    <string name="matrixx_maintainer">Diddy</string>
+</resources>
+
 ```
-Example reference:
-https://github.com/crdroidandroid/android_frameworks_base/blob/16.0/packages/SystemUI/res/values/cr_config.xml
 
-### 5.2 Translations
-We use Crowdin for translations. To help out see:
-https://github.com/crdroidandroid/crdroid_features#translations
-
-### 5.3 Forum template
-Ready to share your build? Use the forum post template:
-https://github.com/crdroidandroid/crdroid_features/blob/16.0/ForumPostTemplate

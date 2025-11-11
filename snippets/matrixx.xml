@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote  name="matrixx"
+           fetch="https://github.com/ProjectMatrixx/"
+           sync-c="true"
+           sync-j="4"
+           revision="refs/heads/16.0" />
+  <remote  name="matrixx-devices"
+           fetch="https://github.com/Matrixx-Devices"
+           sync-c="true"
+           sync-j="4"
+           revision="refs/heads/16.0" />
+  <remote  name="matrixx-gitlab"
+           fetch="https://gitlab.com/projectmatrixx"
+           sync-c="true"
+           sync-j="4"
+           revision="refs/heads/16.0" />
+  <remote  name="gitlab"
+           fetch="https://gitlab.com/dark.phnx12"
+           sync-c="true"
+           sync-j="4"
+           revision="refs/heads/sixteen" />
+
+
+  <project path="android" name="android" remote="matrixx" />
+  <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="matrixx" />
+
+  <!-- build repos -->
+  <project path="build/make" name="android_build" groups="pdk,sysui-studio" remote="matrixx" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/release" name="build_release" remote="matrixx" />
+  <project path="build/soong" name="android_build_soong" groups="pdk,tradefed" remote="matrixx" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+
+  <!-- frameworks repos -->
+  <project path="frameworks/av" name="android_frameworks_av" remote="matrixx" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="matrixx" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="matrixx" />
+  <project path="frameworks/libs/systemui" name="android_frameworks_libs_systemui" remote="matrixx" />
+
+  <project path="lineage-sdk" name="android_lineage-sdk" remote="matrixx"  />
+
+  <!-- packages repos -->
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs" remote="matrixx"  />
+  <project path="packages/apps/crDroidSettings" name="android_packages_apps_MatrixxSettings" remote="matrixx"  />
+  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="matrixx" />
+  <project path="packages/apps/SetupWizard" name="android_packages_apps_SetupWizard" remote="matrixx" />  
+  <project path="packages/apps/LineageParts" name="android_packages_apps_LineageParts" remote="matrixx" />
+  <project path="packages/apps/LMOSystemUIClock" name="android_packages_apps_LMOSystemUIClock" remote="matrixx" />
+  <project path="packages/apps/Backgrounds" name="android_packages_apps_Backgrounds" remote="matrixx" />
+
+  <!-- system repos -->
+  <project path="system/core" name="android_system_core" groups="pdk" remote="matrixx" />
+  <project path="system/libhwbinder" name="system_libhwbinder" remote="matrixx" />
+
+  <!-- Sepolicy -->
+  <project path="device/lineage/sepolicy" name="android_device_matrixx_sepolicy" remote="matrixx" />
+
+  <!--vendor repos-->
+  <project path="vendor/addons" name="android_vendor_addons" remote="matrixx"  />
+  <project path="vendor/lineage" name="android_vendor_lineage" remote="matrixx"  />
+  <project path="vendor/MatrixxOTA" name="android_vendor_MatrixxOTA" remote="matrixx-devices"  />
+
+  <!--Gms repos-->
+  <project path="vendor/pixel/gms" name="vendor_pixel_gms" remote="gitlab" />
+  <project path="vendor/pixel/themepicker" name="vendor_pixel_themepicker" remote="gitlab" />
+  <project path="vendor/pixel/launcher" name="vendor_pixel_launcher" remote="gitlab" />
+  <project path="vendor/google/overlays/ThemeIcons" name="vendor_google_overlays_ThemeIcons" remote="matrixx" />
+</manifest>
