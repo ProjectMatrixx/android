@@ -57,6 +57,7 @@
   <project path="packages/apps/LineageParts" name="android_packages_apps_LineageParts" remote="matrixx" />
   <project path="packages/apps/LMOSystemUIClock" name="android_packages_apps_LMOSystemUIClock" remote="matrixx" />
   <project path="packages/apps/Backgrounds" name="android_packages_apps_Backgrounds" remote="matrixx" />
+  <project path="packages/modules/Connectivity" name="android_packages_modules_Connectivity" remote="matrixx" />
 
   <!-- system repos -->
   <project path="system/core" name="android_system_core" groups="pdk" remote="matrixx" />
@@ -69,6 +70,9 @@
   <project path="vendor/addons" name="android_vendor_addons" remote="matrixx"  />
   <project path="vendor/lineage" name="android_vendor_lineage" remote="matrixx"  />
   <project path="vendor/MatrixxOTA" name="android_vendor_MatrixxOTA" remote="matrixx-devices"  />
+
+  <!--Hardware repos-->
+  <project path="hardware/lineage/compat" name="android_hardware_lineage_compat" remote="matrixx" />
 
   <!--Gms repos-->
   <project path="vendor/pixel/gms" name="vendor_pixel_gms" remote="gitlab" />
