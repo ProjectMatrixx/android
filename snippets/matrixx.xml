@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="matrixx"
+           fetch="https://github.com/Matrixx-staging"
+           sync-c="true"
+           sync-j="4"
+           revision="refs/heads/16.2" />
+
+  <remote  name="matrixx-gitlab"
+           fetch="https://gitlab.com/projectmatrixx"
+           sync-c="true"
+           sync-j="4"
+           depth="1"
+           revision="refs/heads/16" />
+
+  <!-- matrixx additions -->
+  <project path="android" name="android" remote="matrixx" />
+
+  <project path="build/make" name="build" groups="pdk,sysui-studio" remote="matrixx" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+
+  <project path="build/soong" name="build_soong" groups="pdk,tradefed,sysui-studio" remote="matrixx" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <project path="art" name="art" groups="pdk" remote="matrixx" />
+
+  <project path="bionic" name="bionic" groups="pdk" remote="matrixx" />
+
+  <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="matrixx" />
+
+  <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" remote="matrixx" />
+
+  <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" groups="pdk" remote="matrixx" />
+  <project path="external/bouncycastle" name="external_bouncycastle" groups="pdk" remote="matrixx" />
+  <project path="external/FadingEdgeLayout" name="external_FadingEdgeLayout" remote="matrixx" />
+  <project path="external/jemalloc_new" name="external_jemalloc_new" groups="pdk" remote="matrixx" />
+
+  <project path="frameworks/av" name="frameworks_av" groups="pdk,sysui-studio" remote="matrixx" />
+  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="matrixx" />
+  <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="matrixx" />
+  <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="matrixx" />
+  <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" groups="pdk,sysui-studio" remote="matrixx" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" groups="pdk,sysui-studio" remote="matrixx" />
+
+  <project path="hardware/interfaces" name="hardware_interfaces" groups="pdk,sysui-studio" remote="matrixx" />
+
+  <project path="kernel/configs" name="kernel_configs" groups="vts,pdk" remote="matrixx" />
+
+  <project path="lineage-sdk" name="lineage-sdk" remote="matrixx" />
+  <project path="libcore" name="libcore" groups="pdk" remote="matrixx" />
+
+  <project path="packages/apps/ColumbusService" name="packages_apps_ColumbusService" remote="matrixx" />
+  <project path="packages/apps/MatrixxSettings" name="packages_apps_MatrixxSettings" remote="matrixx" />
+  <project path="packages/apps/DeskClock" name="packages_apps_DeskClock" groups="pdk-fs" remote="matrixx" />
+  <project path="packages/apps/Dialer" name="packages_apps_Dialer" groups="pdk-fs" remote="matrixx" />
+  <project path="packages/apps/DocumentsUI" name="packages_apps_DocumentsUI" groups="pdk-cw-fs,pdk-fs" remote="matrixx" />
+  <project path="packages/apps/FaceUnlock" name="packages_apps_FaceUnlock" remote="matrixx" />
+  <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="matrixx" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" groups="pdk-fs,sysui-studio,pdk-cw-tvc" remote="matrixx" />
+  <project path="packages/apps/LineageParts" name="packages_apps_LineageParts" remote="matrixx" />
+  <project path="packages/apps/LMOFreeform" name="packages_apps_LMOFreeform" remote="matrixx" />
+  <project path="packages/apps/Matlog" name="packages_apps_Matlog" remote="matrixx" />
+  <project path="packages/apps/Messaging" name="packages_apps_Messaging" groups="pdk-fs" remote="matrixx" />
+  <project path="packages/apps/OmniStyle" name="packages_apps_OmniStyle" remote="matrixx" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc,sysui-studio" remote="matrixx" />
+  <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" groups="pdk-fs" remote="matrixx" />
+  <project path="packages/apps/SetupWizard" name="packages_apps_SetupWizard" remote="matrixx" />
+  <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" groups="pdk-fs,sysui-studio" remote="matrixx" />
+  <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" groups="pdk-fs,sysui-studio" remote="matrixx" />
+  <project path="packages/inputmethods/LatinIME" name="packages_inputmethods_LatinIME" groups="pdk-fs" remote="matrixx" />
+  <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" groups="pdk" remote="matrixx" />
+  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" remote="matrixx" />
+  <project path="packages/modules/Permission" name="packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" remote="matrixx" />
+  <project path="packages/modules/Wifi" name="packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="matrixx" />
+  <project path="packages/services/DeviceAsWebcam" name="packages_services_DeviceAsWebcam" groups="pdk-cw-fs,pdk-fs" remote="matrixx" />
+  <project path="packages/services/OmniJaws" name="packages_services_OmniJaws" remote="matrixx" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="matrixx" />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="matrixx" />
+
+  <project path="system/core" name="system_core" groups="pdk" remote="matrixx" />
+  <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="matrixx" />
+  <project path="system/memory/libmeminfo" name="system_memory_libmeminfo" groups="pdk" remote="matrixx" />
+  <project path="system/update_engine" name="system_update_engine" groups="pdk" remote="matrixx" />
+  <project path="system/vold" name="system_vold" groups="pdk" remote="matrixx" />
+
+  <project path="vendor/extras" name="vendor_extras" remote="matrixx" />
+  <project path="vendor/certification" name="vendor_certification" remote="matrixx" />
+  <project path="vendor/lineage" name="vendor_lineage" remote="matrixx" />
+  <project path="vendor/gms" name="vendor_gms" remote="matrixx-gitlab" />
+  <project path="vendor/google/overlays/ThemeIcons" name="vendor_google_overlays_ThemeIcons" remote="matrixx" />
+  <project path="vendor/bcr" name="vendor_bcr" remote="matrixx" />
+</manifest>

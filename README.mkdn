@@ -1,36 +1,70 @@
-LineageOS
-===========
-
-Getting started
----------------
-
-To get started with Android/LineageOS, you'll need to get familiar with [Source Control Tools](https://source.android.com/setup/develop).
-
-To initialize your local repository using the LineageOS trees, use a command like this:
+# Initialize local repository
 ```
-repo init -u https://github.com/LineageOS/android.git -b lineage-23.2 --git-lfs
+repo init -u https://github.com/Matrixx-staging/android -b 16.2 --git-lfs
 ```
-Then to sync up:
+
+# Sync up
 ```
-repo sync
+repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ```
-Please see the [LineageOS Wiki](https://wiki.lineageos.org/) for building instructions, by device.
 
+# Build
 
-Submitting patches
-------------------
-Patches are always welcome! Please submit your patches via LineageOS Gerrit!
+- Set up the build environment
+```bash
+. b*/env*
+```
 
-Simply follow our guide on [how to submit patches](https://wiki.lineageos.org/submitting-patch-howto.html).
+- Lunch a target
+```bash
+lunch lineage_codename-bp4a-user
+```
 
-To view the status of your and others' patches, visit [LineageOS Gerrit Code Review](https://review.lineageos.org/).
+- To start compiling
+```bash
+m bacon
+```
 
+- Paintainer prop (define in system/product prop)
+```prop
+ro.matrixx.maintainer=Mrick343
+```
 
-Buildbot
---------
+- Refresh rate list (optional) - defining this flags makes the controller skip the parsing of Display.Mode refresh rates
+- For supported refresh rates. The refresh rate controller will also assume that all the defined refresh rates are "supported"
+```make
+TARGET_SUPPORTED_REFRESH_RATES := 60,90,120,144
+```
 
-All supported devices are built weekly and periodically as changes are committed to ensure the source trees remain buildable.
+- If device support UDFPS
+```make
+TARGET_CUSTOM_UDFPS := true
+```
 
-You can view the current build statuses at [LineageOS Buildkite](https://buildkite.com/lineageos).
+- For GMS
+```make
+WITH_GMS := true
+```
 
-Builds produced weekly by the buildbot can be downloaded from [LineageOS downloads](https://download.lineageos.org/).
+- For bcr
+```make
+WITH_BCR := true
+```
+
+- Set surfaceflinger refreshrate
+```make
+$(call soong_config_set,surfaceflinger,frame_rate_category_high,120)
+$(call soong_config_set,surfaceflinger,frame_rate_category_min,60)
+```
+
+- Whether the device supports Smart Pixels(frameworks overlay)
+```make
+<!-- Whether the device supports Smart Pixels -->
+<bool name="config_supportSmartPixels">true</bool>
+```
+
+- Limit AOD refreshrate (SystemUI overlay)
+```make
+<!-- Preferred max refresh rate at AOD & Ambient Display, if supported by the display. -->
+<integer name="config_aodMaxRefreshRate">60</integer>
+```
