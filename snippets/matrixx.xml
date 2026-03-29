@@ -84,6 +84,7 @@
   <project path="packages/apps/LineageParts" name="packages_apps_LineageParts" remote="matrixx" />
   <project path="packages/apps/LMOFreeform" name="packages_apps_LMOFreeform" remote="matrixx" />
   <project path="packages/apps/Matlog" name="packages_apps_Matlog" remote="matrixx" />
+  <project path="packages/apps/Matrixx/Wallpapers" name="packages_apps_Matrixx_Wallpapers" remote="matrixx" />
   <project path="packages/apps/Messaging" name="packages_apps_Messaging" groups="pdk-fs" remote="matrixx" />
   <project path="packages/apps/OmniStyle" name="packages_apps_OmniStyle" remote="matrixx" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc,sysui-studio" remote="matrixx" />
