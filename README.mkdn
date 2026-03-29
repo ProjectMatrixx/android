@@ -12,22 +12,24 @@ repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 
 - Set up the build environment
 ```bash
-. b*/env*
+. build/envsetup.sh
 ```
 
 - Lunch a target
 ```bash
-lunch lineage_codename-bp4a-user
+lunch matrixx_codename-bp4a-user
 ```
 
 - To start compiling
 ```bash
-m bacon
+m matrixx
 ```
+
+For
 
 - Paintainer prop (define in system/product prop)
 ```prop
-ro.matrixx.maintainer=Mrick343
+MATRIXX_MAINTAINER := Mrick343
 ```
 
 - Refresh rate list (optional) - defining this flags makes the controller skip the parsing of Display.Mode refresh rates
@@ -45,6 +47,18 @@ TARGET_CUSTOM_UDFPS := true
 ```make
 WITH_GMS := true
 ```
+```make
+TARGET_INCLUDE_PIXEL_LAUNCHER := true (For Building Pixel Launcher)
+```
+```make
+TARGET_DEFAULT_PIXEL_LAUNCHER := true (Set Pixel Launcher as default Launcher)
+```
+```make
+WITH_GMS_COMMS_SUITE := true (For Google Telephony)
+```
+```make
+WITH_GMS_AICORE := true (For Google AICore)
+```
 
 - For bcr
 ```make
@@ -55,6 +69,27 @@ WITH_BCR := true
 ```make
 $(call soong_config_set,surfaceflinger,frame_rate_category_high,120)
 $(call soong_config_set,surfaceflinger,frame_rate_category_min,60)
+```
+
+- Enable optimized dexopt tuning (default false, Recomended for highend devices)
+```make
+TARGET_OPTIMIZED_DEXOPT := true
+```
+
+- Bypass Charging
+```make
+BYPASS_CHARGE_SUPPORTED := true
+```
+
+- High Brightness Mode (HBM)
+```make
+HBM_SUPPORTED := false
+HBM_NODE := /sys/class/backlight/panel0-backlight/hbm_mode
+```
+
+- Drop default aperture camera
+```make
+PRODUCT_NO_CAMERA := true
 ```
 
 - Whether the device supports Smart Pixels(frameworks overlay)
