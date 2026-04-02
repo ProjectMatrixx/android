@@ -111,6 +111,7 @@
   <project path="vendor/extras" name="vendor_extras" remote="matrixx" />
   <project path="vendor/certification" name="vendor_certification" remote="matrixx" />
   <project path="vendor/matrixx" name="vendor_matrixx" remote="matrixx" />
+  <project path="vendor/MatrixxOTA" name="android_vendor_MatrixxOTA" remote="matrixx-devices"  revision="16.0" />
   <project path="vendor/gms" name="vendor_gms" remote="matrixx-gitlab" />
   <project path="vendor/google/overlays/ThemeIcons" name="vendor_google_overlays_ThemeIcons" remote="matrixx" />
   <project path="vendor/bcr" name="vendor_bcr" remote="matrixx" />
