@@ -12,7 +12,7 @@
            sync-c="true"
            sync-j="4"
            depth="1"
-           revision="refs/heads/16" />
+           revision="refs/heads/16.2" />
 
   <remote  name="matrixx-devices"
            fetch="https://github.com/Matrixx-Devices"
@@ -112,7 +112,10 @@
   <project path="vendor/certification" name="vendor_certification" remote="matrixx" />
   <project path="vendor/matrixx" name="vendor_matrixx" remote="matrixx" />
   <project path="vendor/MatrixxOTA" name="android_vendor_MatrixxOTA" remote="matrixx-devices"  revision="16.0" />
-  <project path="vendor/gms" name="vendor_gms" remote="matrixx-gitlab" />
+  <project path="vendor/pixel/gms" name="vendor_pixel_gms" remote="matrixx-gitlab" />
+  <project path="vendor/pixel/themepicker" name="vendor_pixel_themepicker" remote="matrixx-gitlab" />
+  <project path="vendor/pixel/launcher" name="vendor_pixel_launcher" remote="matrixx-gitlab" />
+  <project path="vendor/pixel/sounds" name="vendor_pixel_sounds" remote="matrixx-gitlab" />
   <project path="vendor/google/overlays/ThemeIcons" name="vendor_google_overlays_ThemeIcons" remote="matrixx" />
   <project path="vendor/bcr" name="vendor_bcr" remote="matrixx" />
 </manifest>
