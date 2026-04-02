@@ -2,7 +2,7 @@
 <manifest>
 
   <remote  name="matrixx"
-           fetch="https://github.com/Matrixx-staging"
+           fetch="https://github.com/ProjectMatrixx"
            sync-c="true"
            sync-j="4"
            revision="refs/heads/16.2" />

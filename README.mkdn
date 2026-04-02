@@ -1,6 +1,10 @@
+<a href="#"><img src="Banner.png" /></a>
+
+#
+
 # Initialize local repository
 ```
-repo init -u https://github.com/Matrixx-staging/android -b 16.2 --git-lfs
+repo init -u https://github.com/ProjectMatrixx/android -b 16.2 --git-lfs
 ```
 
 # Sync up
@@ -22,13 +26,13 @@ lunch matrixx_codename-bp4a-user
 
 - To start compiling
 ```bash
-m matrixx
+make matrixx
 ```
 
 For
 
-- Paintainer prop (define in system/product prop)
-```prop
+- Maintainer flag (define in matrixx_device.mk)
+```make
 MATRIXX_MAINTAINER := Mrick343
 ```
 
