@@ -48,11 +48,11 @@
 
   <project path="art" name="art" groups="pdk" remote="matrixx" />
 
-  <project path="bionic" name="bionic" groups="pdk" remote="matrixx" />
+  <project path="bionic" name="bionic" groups="pdk" remote="matrixx" revision="test" />
 
   <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="matrixx" />
 
-  <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" remote="matrixx" />
+  <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" remote="matrixx" revision="test" />
 
   <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" groups="pdk" remote="matrixx" />
   <project path="external/bouncycastle" name="external_bouncycastle" groups="pdk" remote="matrixx" />
@@ -60,7 +60,7 @@
   <project path="external/jemalloc_new" name="external_jemalloc_new" groups="pdk" remote="matrixx" />
 
   <project path="frameworks/av" name="frameworks_av" groups="pdk,sysui-studio" remote="matrixx" />
-  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="matrixx" />
+  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="matrixx" revision="test" />
   <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="matrixx" />
   <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="matrixx" />
   <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" groups="pdk,sysui-studio" remote="matrixx" />
@@ -74,7 +74,7 @@
   <project path="libcore" name="libcore" groups="pdk" remote="matrixx" />
 
   <project path="packages/apps/ColumbusService" name="packages_apps_ColumbusService" remote="matrixx" />
-  <project path="packages/apps/MatrixxSettings" name="packages_apps_MatrixxSettings" remote="matrixx" />
+  <project path="packages/apps/MatrixxSettings" name="packages_apps_MatrixxSettings" remote="matrixx" revision="test" />
   <project path="packages/apps/DeskClock" name="packages_apps_DeskClock" groups="pdk-fs" remote="matrixx" />
   <project path="packages/apps/Dialer" name="packages_apps_Dialer" groups="pdk-fs" remote="matrixx" />
   <project path="packages/apps/DocumentsUI" name="packages_apps_DocumentsUI" groups="pdk-cw-fs,pdk-fs" remote="matrixx" />
@@ -102,7 +102,7 @@
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="matrixx" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="matrixx" />
 
-  <project path="system/core" name="system_core" groups="pdk" remote="matrixx" />
+  <project path="system/core" name="system_core" groups="pdk" remote="matrixx" revision="test" />
   <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="matrixx" />
   <project path="system/memory/libmeminfo" name="system_memory_libmeminfo" groups="pdk" remote="matrixx" />
   <project path="system/update_engine" name="system_update_engine" groups="pdk" remote="matrixx" />
