@@ -4,7 +4,7 @@
 
 # Initialize local repository
 ```
-repo init -u https://github.com/ProjectMatrixx/android -b test --git-lfs
+repo init -u https://github.com/ProjectMatrixx/android -b test-lab --git-lfs
 ```
 
 # Sync up
