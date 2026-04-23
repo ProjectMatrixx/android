@@ -48,11 +48,11 @@
 
   <project path="art" name="art" groups="pdk" remote="matrixx" />
 
-  <project path="bionic" name="bionic" groups="pdk" remote="matrixx" />
+  <project path="bionic" name="bionic" groups="pdk" remote="matrixx" revision="test" />
 
   <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="matrixx" />
 
-  <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" remote="matrixx" />
+  <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" remote="matrixx" revision="test" />
 
   <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" groups="pdk" remote="matrixx" />
   <project path="external/bouncycastle" name="external_bouncycastle" groups="pdk" remote="matrixx" />
@@ -110,7 +110,7 @@
 
   <project path="vendor/extras" name="vendor_extras" remote="matrixx" />
   <project path="vendor/certification" name="vendor_certification" remote="matrixx" />
-  <project path="vendor/matrixx" name="vendor_matrixx" remote="matrixx" />
+  <project path="vendor/matrixx" name="vendor_matrixx" remote="matrixx" revision="test" />
   <project path="vendor/MatrixxOTA" name="android_vendor_MatrixxOTA" remote="matrixx-devices"  revision="16.0" />
   <project path="vendor/pixel/gms" name="vendor_pixel_gms" remote="matrixx-gitlab" />
   <project path="vendor/pixel/themepicker" name="vendor_pixel_themepicker" remote="matrixx-gitlab" />
