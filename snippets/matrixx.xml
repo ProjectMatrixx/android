@@ -107,6 +107,7 @@
   <project path="system/memory/libmeminfo" name="system_memory_libmeminfo" groups="pdk" remote="matrixx" />
   <project path="system/update_engine" name="system_update_engine" groups="pdk" remote="matrixx" />
   <project path="system/vold" name="system_vold" groups="pdk" remote="matrixx" />
+  <project path="system/media" name="system_media" groups="pdk" remote="matrixx" />
 
   <project path="vendor/extras" name="vendor_extras" remote="matrixx" />
   <project path="vendor/certification" name="vendor_certification" remote="matrixx" />
