@@ -74,7 +74,7 @@
   <project path="libcore" name="libcore" groups="pdk" remote="matrixx" />
 
   <project path="packages/apps/ColumbusService" name="packages_apps_ColumbusService" remote="matrixx" />
-  <project path="packages/apps/MatrixxSettings" name="packages_apps_MatrixxSettings" remote="matrixx" />
+  <project path="packages/apps/MatrixxLab" name="packages_apps_MatrixxLab" remote="matrixx" />
   <project path="packages/apps/DeskClock" name="packages_apps_DeskClock" groups="pdk-fs" remote="matrixx" />
   <project path="packages/apps/Dialer" name="packages_apps_Dialer" groups="pdk-fs" remote="matrixx" />
   <project path="packages/apps/DocumentsUI" name="packages_apps_DocumentsUI" groups="pdk-cw-fs,pdk-fs" remote="matrixx" />
