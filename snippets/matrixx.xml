@@ -113,7 +113,6 @@
   <project path="system/vold" name="system_vold" groups="pdk" remote="matrixx" />
 
   <project path="vendor/extras" name="vendor_extras" remote="matrixx" />
-  <project path="vendor/certification" name="vendor_certification" remote="matrixx" />
   <project path="vendor/matrixx" name="vendor_matrixx" remote="matrixx" />
   <project path="vendor/MatrixxOTA" name="android_vendor_MatrixxOTA" remote="matrixx-devices"  revision="16.0" />
   <project path="vendor/pixel/gms" name="vendor_pixel_gms" remote="matrixx-gitlab" />
