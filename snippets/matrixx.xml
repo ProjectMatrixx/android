@@ -72,6 +72,7 @@
 
   <project path="axion-sdk" name="axion-sdk" remote="matrixx" />
   <project path="lineage-sdk" name="lineage-sdk" remote="matrixx" />
+  <project path="matrixx-sdk" name="matrixx-sdk" remote="matrixx" />
   <project path="libcore" name="libcore" groups="pdk" remote="matrixx" />
 
   <project path="packages/apps/AppLocker" name="packages_apps_AppLocker" remote="matrixx" />
