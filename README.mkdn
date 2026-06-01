@@ -51,6 +51,9 @@ TARGET_CUSTOM_UDFPS := true
 WITH_GMS := true
 ```
 ```make
+WITH_EXTRA_GAPPS := true (For including extra apps in gms build i.e DocumentsUIGoogle ,Maps, PrebuiltGmail, FilesPrebuilt, Photos & Chrome-Stub)
+```
+```make
 TARGET_INCLUDE_PIXEL_LAUNCHER := true (For Building Pixel Launcher)
 ```
 ```make
@@ -104,12 +107,6 @@ USE_REALITY_ENGINE := true
 - Drop default aperture camera
 ```make
 PRODUCT_NO_CAMERA := true
-```
-
-- Whether the device supports Smart Pixels(frameworks overlay)
-```make
-<!-- Whether the device supports Smart Pixels -->
-<bool name="config_supportSmartPixels">true</bool>
 ```
 
 - Limit AOD refreshrate (SystemUI overlay)
