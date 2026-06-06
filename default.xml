@@ -506,7 +506,6 @@
   <project path="external/sandboxed-api" name="platform/external/sandboxed-api" groups="pdk" remote="aosp" />
   <project path="external/scapy" name="platform/external/scapy" groups="pdk-fs,pdk-cw-tvc" remote="aosp" />
   <project path="external/scrypt" name="platform/external/scrypt" groups="pdk" remote="aosp" />
-  <project path="external/scudo" name="platform/external/scudo" groups="pdk" remote="aosp" />
   <project path="external/sdk-platform-java" name="platform/external/sdk-platform-java" groups="pdk,tradefed" remote="aosp" />
   <project path="external/sdv/vsomeip" name="platform/external/sdv/vsomeip" groups="pdk" remote="aosp" />
   <project path="external/seccomp-tests" name="platform/external/seccomp-tests" groups="pdk" remote="aosp" />
@@ -787,7 +786,6 @@
   <project path="packages/modules/RuntimeI18n" name="platform/packages/modules/RuntimeI18n" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="packages/modules/Scheduling" name="platform/packages/modules/Scheduling" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="packages/modules/SdkExtensions" name="platform/packages/modules/SdkExtensions" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
-  <project path="packages/modules/StatsD" name="platform/packages/modules/StatsD" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="packages/modules/Telecom" name="platform/packages/modules/Telecom" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="packages/modules/Telephony" name="platform/packages/modules/Telephony" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="packages/modules/ThreadNetwork" name="platform/packages/modules/ThreadNetwork" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
