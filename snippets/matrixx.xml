@@ -58,6 +58,7 @@
   <project path="external/bouncycastle" name="external_bouncycastle" groups="pdk" remote="matrixx" />
   <project path="external/FadingEdgeLayout" name="external_FadingEdgeLayout" remote="matrixx" />
   <project path="external/jemalloc_new" name="external_jemalloc_new" groups="pdk" remote="matrixx" />
+  <project path="external/scudo" name="external_scudo" groups="pdk" remote="matrixx" />
 
   <project path="frameworks/av" name="frameworks_av" groups="pdk,sysui-studio" remote="matrixx" />
   <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="matrixx" />
@@ -100,6 +101,7 @@
   <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" groups="pdk" remote="matrixx" />
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" remote="matrixx" />
   <project path="packages/modules/Permission" name="packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" remote="matrixx" />
+  <project path="packages/modules/StatsD" name="packages_modules_StatsD" groups="pdk-cw-fs,pdk-fs" remote="matrixx" />
   <project path="packages/modules/Wifi" name="packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="matrixx" />
   <project path="packages/services/AxQuickLook" name="packages_services_AxQuickLook" remote="matrixx" />
   <project path="packages/services/DeviceAsWebcam" name="packages_services_DeviceAsWebcam" groups="pdk-cw-fs,pdk-fs" remote="matrixx" />
